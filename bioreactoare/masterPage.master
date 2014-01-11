@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterPage.master.cs" Inherits="masterPage" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Utilizarea modelului Project Based Learning (PBL) in educatia biotehnologica</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="full-container">
+        <div id="top-bar"></div>
+    </div>
+    <header>
+        <div class="container">
+            <h1 class="pull-left"><a href="index.html">PBL in educatia biotehnologica</a></h1>
+
+            <ul class="nav nav-pills pull-right" id="menu">
+              <li class="active"><a href="#">Acasa</a></li>
+              <li><a href="documentatie.html">Documentatie</a></li>
+              <li><a href="#">Start quiz</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <form id="form1" runat="server">
+    <div>
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    </form>
+</body>
+</html>
